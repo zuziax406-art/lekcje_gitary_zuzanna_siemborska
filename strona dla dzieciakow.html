@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Siemborska — Lekcje gitary dla dzieci</title>
+  <style>
+    :root{
+      --blue:#4da6ff;
+      --dark-blue:#1a75ff;
+      --muted:#aebad6;
+      --bg:#0d1b2a;
+      --card:#1b263b;
+      --text:#e0e6f3;
+      --radius:16px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box;transition:all 0.4s ease-in-out}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#112d4e 100%);color:var(--text)}
+    .container{max-width:1100px;margin:36px auto;padding:28px}
+    header{display:flex;align-items:center;gap:20px;animation:slideDown 1s ease}
+    .hero{display:flex;align-items:center;gap:36px;padding:28px;background:var(--card);border-radius:var(--radius);box-shadow:0 6px 24px rgba(0,0,0,0.5);animation:fadeIn 1.2s ease}
+    .photo{flex:0 0 200px;animation:bounceIn 1.5s ease}
+    .photo img{width:200px;height:200px;object-fit:cover;border-radius:12px;border:4px solid var(--blue);box-shadow:0 6px 18px rgba(0,0,0,0.6)}
+    .photo figcaption{font-size:13px;color:var(--muted);margin-top:8px;text-align:center}
+    h1{margin:0;font-size:32px;color:var(--blue)}
+    h2{color:var(--dark-blue);margin:0 0 8px 0}
+    p.lead{margin:8px 0 0 0;color:var(--text)}
+
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:22px}
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,0.4);animation:fadeInUp 1.3s ease}
+    ul{padding-left:18px}
+    .skills li{margin-bottom:8px}
+    .cta{display:flex;gap:12px;margin-top:16px}
+    .btn{display:inline-block;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:600;transition:transform 0.3s}
+    .btn:hover{transform:scale(1.1)}
+    .btn-primary{background:var(--blue);color:white}
+    .btn-ghost{border:2px solid var(--blue);color:var(--blue);background:transparent}
+
+    .contact dl{display:flex;flex-direction:column;gap:14px;margin:0;padding:0}
+    .contact-item{display:flex;align-items:center;gap:10px}
+    .icon{min-width:36px;min-height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,var(--blue),var(--dark-blue));color:white;font-weight:700;font-size:18px}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px;animation:fadeIn 2s ease}
+
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      .photo img{width:140px;height:140px}
+      .photo{flex:0 0 140px}
+    }
+
+    @keyframes fadeIn {from{opacity:0} to{opacity:1}}
+    @keyframes fadeInUp {from{opacity:0; transform:translateY(20px)} to{opacity:1; transform:translateY(0)}}
+    @keyframes slideDown {from{opacity:0; transform:translateY(-40px)} to{opacity:1; transform:translateY(0)}}
+    @keyframes bounceIn {0%{transform:scale(0.5);opacity:0} 60%{transform:scale(1.2);opacity:1} 100%{transform:scale(1)}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <h1>Siemborska</h1>
+        <div style="color:var(--blue); font-weight:700;">Profesjonalne lekcje gitary dla dzieci</div>
+      </div>
+    </header>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <figure class="photo">
+        <img src="siemboska.jpg" alt="Foto Siemborska" />
+        <figcaption>Siemborska — zdjęcie</figcaption>
+      </figure>
+
+      <div>
+        <h2 id="hero-title">Gram na gitarze od 7 lat — to moja pasja</h2>
+        <p class="lead">Jestem samoukiem i przez 7 lat wypracowałam metody, dzięki którym dzieci uczą się szybko, z radością i pewnością siebie. Chcę swoją ogromną wiedzę przekazać innym — szczególnie najmłodszym, którzy dopiero zaczynają swoją przygodę z gitarą.</p>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="https://www.facebook.com/profile.php?id=100090981702481" target="_blank" rel="noopener noreferrer">Zobacz mój Facebook</a>
+          <a class="btn btn-ghost" href="mailto:zuziax406@gmail.com">Napisz wiadomość</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <main class="card">
+        <h3>Co nauczę Twoje dziecko</h3>
+        <p>Moje lekcje są stworzone z myślą o dzieciach — bez pośpiechu, w atmosferze zabawy i sukcesu. Na zajęciach dziecko nie tylko nauczy się grać na gitarze, ale też sprawdzi, czy naprawdę to lubi i czy chce kontynuować naukę.</p>
+
+        <h4 style="margin-top:18px">Program zajęć — przykładowo:</h4>
+        <ul class="skills">
+          <li>Podstawy czytania tabulatury</li>
+          <li>Akordy: molowe i durowe</li>
+          <li>Akordy barowe</li>
+          <li>Technika fingerstyle</li>
+          <li>Podstawy rytmu i strumming</li>
+          <li>Proste piosenki — nauka przez praktykę</li>
+          <li>Indywidualne podejście i ćwiczenia dopasowane do wieku</li>
+          <li>Wiele innych elementów — dopasowanych do tempa dziecka</li>
+        </ul>
+
+        <h4 style="margin-top:18px">Dlaczego warto?</h4>
+        <p>Jako samouk potrafię przekazywać wiedzę w przystępny sposób, ucząc praktycznych umiejętności, które szybko dają radość z grania. Lekcje są skoncentrowane na dziecku — jego motywacji i naturalnym tempie nauki.</p>
+
+        <h4 style="margin-top:18px">Jak wyglądają zajęcia</h4>
+        <p>Zajęcia mogą odbywać się online lub stacjonarnie (w zależności od lokalizacji). Każde spotkanie zawiera rozgrzewkę, pracę nad techniką oraz wspólną naukę utworu dostosowanego do poziomu.</p>
+
+      </main>
+
+      <aside class="card">
+        <h3>Kontakt</h3>
+        <div class="contact" style="margin-top:12px">
+          <dl>
+            <div class="contact-item">
+              <span class="icon">☎</span>
+              <span><strong>Telefon:</strong> <a href="tel:+48729969787">+48 729 969 787</a></span>
+            </div>
+
+            <div class="contact-item">
+              <span class="icon">✉</span>
+              <span><strong>Email:</strong> <a href="mailto:zuziax406@gmail.com">zuziax406@gmail.com</a></span>
+            </div>
+
+            <div class="contact-item">
+              <span class="icon">📍</span>
+              <span><strong>Lokalizacja:</strong> Ostrołęka, woj. mazowieckie (ul. Dzieci Polskich 17)</span>
+            </div>
+          </dl>
+        </div>
+
+        <div style="margin-top:16px">
+          <h4>Umów lekcję</h4>
+          <p style="margin:8px 0;color:var(--muted)">Możesz użyć przycisku poniżej, by skontaktować się przez Facebook lub wysłać e‑mail.</p>
+          <div style="display:flex;gap:10px">
+            <a class="btn btn-primary" href="https://www.facebook.com/profile.php?id=100090981702481" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a class="btn" style="border:2px solid #2a3f65;padding:10px 12px;background:transparent;color:var(--blue);border-radius:10px;text-decoration:none;font-weight:600" href="mailto:zuziax406@gmail.com">Wyślij e‑mail</a>
+          </div>
+
+          <form style="margin-top:14px;display:grid;gap:8px" action="mailto:zuziax406@gmail.com" method="post" enctype="text/plain">
+            <input name="Imię" placeholder="Imię rodzica" style="padding:10px;border-radius:8px;border:1px solid #2a3f65;background:#0d1b2a;color:var(--text)" />
+            <input name="Telefon" placeholder="Telefon kontaktowy" style="padding:10px;border-radius:8px;border:1px solid #2a3f65;background:#0d1b2a;color:var(--text)" />
+            <textarea name="Wiadomość" placeholder="Krótka wiadomość" rows="3" style="padding:10px;border-radius:8px;border:1px solid #2a3f65;background:#0d1b2a;color:var(--text)"></textarea>
+            <button type="submit" class="btn btn-primary">Wyślij zgłoszenie</button>
+          </form>
+        </div>
+
+      </aside>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Siemborska — Lekcje gitary dla dzieciaków!. Wszystkie prawa zastrzeżone.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
